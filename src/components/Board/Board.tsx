@@ -16,8 +16,8 @@ import {
   ButtonAgain,
 } from "./Board.styles";
 import { Ball } from "../Ball";
-import { cpuPlay } from "../../utils/helpers/cpuPlay";
-import { checkWinner } from "../../utils/helpers/checkWinner";
+// import { cpuPlay } from "../../utils/helpers/cpuPlay";
+// import { checkWinner } from "../../utils/helpers/checkWinner";
 
 export const Board: React.FC<BoardProps> = ({ type }) => {
   const [balls, setBalls] = useState<BallsType[]>([]);
@@ -26,7 +26,7 @@ export const Board: React.FC<BoardProps> = ({ type }) => {
   const [markerMove, setMarkerMove] = useState({ x: 850 });
   const [redPlayerBalls, setRedPlayerBalls] = useState<number[]>([]);
   const [yellowPlayerBalls, setYellowPlayerBalls] = useState<number[]>([]);
-  const [cpuBalls, setCpuBalls] = useState<number[]>([]);
+  // const [cpuBalls, setCpuBalls] = useState<number[]>([]);
   const [waitingMove, setWaitingMove] = useState(false);
   const [slot, setSlot] = useState<Slot>({
     0: 5,

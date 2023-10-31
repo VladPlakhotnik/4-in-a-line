@@ -1,0 +1,1 @@
+export { GameVsPerson } from "./Game";
